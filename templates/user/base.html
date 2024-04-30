@@ -1,0 +1,26 @@
+{% comment %} contain the sections which are same at all pages , eg. navbar, footer {% endcomment %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        
+    {% endblock title %}</title>
+
+    {% block cssLink %}
+  {% endblock cssLink %}
+</head>
+<body>
+  i am user module base page
+  
+
+    {% block body %}{% endblock body %}
+
+    {% block jsLink %}{% endblock jsLink %}
+    
+</body>
+</html>
+

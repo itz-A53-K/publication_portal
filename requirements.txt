@@ -1,0 +1,2 @@
+# run "pip install -r requirements.txt" to download from requirements.txt
+django

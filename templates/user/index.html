@@ -1,0 +1,22 @@
+{% extends 'user/base.html' %}
+{% load static %}
+
+{%block title%}
+{% comment %} page title here {% endcomment %}
+{%endblock%}
+
+{%block csslink%}
+{% comment %} css link here {% endcomment %}
+{% comment %} <link rel="stylesheet" href="{% static 'css/user/style.css'%}" /> {% endcomment %}
+{%endblock%}
+
+{%block body%}
+<br>
+i am index page
+
+{% endblock body%}
+
+{% block jsLink %}
+{% comment %} js link here {% endcomment %}
+{% comment %} <script src="{% static 'js/user/script.js' %}"></script> {% endcomment %}
+{% endblock jsLink %}
