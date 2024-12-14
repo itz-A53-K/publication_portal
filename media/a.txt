@@ -1,0 +1,1 @@
+all media file (img, video, audio) goes in this folder

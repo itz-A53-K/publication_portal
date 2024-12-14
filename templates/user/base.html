@@ -1,0 +1,28 @@
+<!-- Contains the HTML document objects which are same at all pages , eg. title, navigation bar, header, footer, metadata etc. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="server, django, journal, publication, article, cotton, university">
+    <meta name="author" content="Raan Saurav Bhuyan">
+    <meta name="author" content="Kabyashree Baruah">
+    <meta name="author" content="Abinash Kalita">
+    <meta name="description" content="Journal publication portal for the Cotton University.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {% block title %}
+
+      {% endblock title %}
+  </title>
+
+    {% block cssLink %}
+  {% endblock cssLink %}
+</head>
+<body>
+    {% block body %}
+    {% endblock body %}
+
+    {% block jsLink %}
+    {% endblock jsLink %}
+</body>
+</html>

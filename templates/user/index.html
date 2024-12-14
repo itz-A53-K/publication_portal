@@ -1,0 +1,24 @@
+{% extends 'user/base.html' %}
+{% load static %}
+
+{% block title %}
+{% comment %} page title here {% endcomment %}
+Cotton University | Journal Site
+{% endblock %}
+
+{% block csslink %}
+{% comment %} css link here {% endcomment %}
+{% comment %} <link rel="stylesheet" href="{% static 'css/user/style.css'%}" /> {% endcomment %}
+{% endblock %}
+
+{% block body %}
+<h1>Journal Publication Portal</h1>
+<h2>Cotton University</h2>
+
+<p>This HTML document alongside the associated JavaScript and CSS documents are meant to change by the Front-end Team.</p>
+{% endblock body %}
+
+{% block jsLink %}
+{% comment %} js link here {% endcomment %}
+{% comment %} <script src="{% static 'js/user/script.js' %}"></script> {% endcomment %}
+{% endblock jsLink %}
