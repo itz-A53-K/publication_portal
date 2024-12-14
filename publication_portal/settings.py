@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-fa-p*p)r8gjgpv&e(edn8!i7-unn)6hgq@lkge0h#buy-6h85n'
+SECRET_KEY = os.getenv('secret_key'),
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,10 +83,10 @@ WSGI_APPLICATION = 'publication_portal.wsgi.application'
 DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql',
-        "NAME": 'u391309036_pub_portal',
-        "USER": "u391309036_sAdmin",
-        "PASSWORD": "eQh75%3EqT3&U)=73rQ",
-        "HOST": "154.41.233.204",
+        "NAME": os.getenv('db_name'),
+        "USER": os.getenv('db_user'),
+        "PASSWORD": os.getenv('db_password'),
+        "HOST": os.getenv('db_host'),
         "PORT": "3306",
     }
 }

@@ -83,7 +83,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env #commented out for now only
 .venv
 env/
 venv/
