@@ -29,7 +29,7 @@ Run the following command to install the project dependencies:
 pip install -r requirements.txt
 ```
 
->[!NOTE]
+>[!TIP]
 >You can use a Python Virtual Environment and install the project dependencies within the virtual environment. A Python virtual environment is a self-contained directory that contains a specific Python installation and its associated packages. This helps isolate project dependencies and avoid conflicts.
 
 
